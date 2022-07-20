@@ -2,12 +2,12 @@
 
 class Program {
 	public Program() {
-		System.out.println("First Construtor");
+		System.out.println("First Constructor");
 	}
 }
 
 public class App {
 	public static void main(String[] args) {
-
+		Program myProgram = new Program();
 	}
 }
