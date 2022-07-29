@@ -2,6 +2,7 @@
 
 class Program {
 	int value;
+	String text;
 	
 	public Program() {
 		System.out.println("First Constructor");
@@ -11,7 +12,15 @@ class Program {
 	
 	public Program(int value) {
 		this.value = value;
+		
 		System.out.println("Second Contructor");
+	}
+	
+	public Program(int value, String text) {
+		this.value = value;
+		this.text = text;
+		
+		System.out.println("Third Contructor");
 	}
 }
 
@@ -19,5 +28,6 @@ public class App {
 	public static void main(String[] args) {
 		Program myProgram = new Program();
 		Program myProgram1 = new Program(2);
+		Program myProgram2 = new Program(5, "Hi");
 	}
 }
